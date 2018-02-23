@@ -1,1 +1,16 @@
 @import './_reset.scss';
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 1px solid red;
+
+  .face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #abcdef;
+    backface-visibility: visible;
+  }
+}
